@@ -1,0 +1,20 @@
+.nav-items-group-one > div > img,
+.nav-items-group-two > div > img {
+  width: 30px;
+}
+
+.nav-items-group-one > div,
+.nav-items-group-two > div {
+  display: flex;
+
+  gap: 20px;
+}
+
+.nav-items-group-one > div > p,
+.nav-items-group-two > div > p {
+  font-size: 24px;
+
+  margin: 0;
+
+  padding: 12px;
+}
