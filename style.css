@@ -22,3 +22,67 @@ body {
   grid-template-columns: minmax(290px, 1fr) 5fr;
   min-height: 100vh;
 }
+
+.sidebar-layout {
+  background-color: var(--sidebar-bg-color);
+  display: grid;
+  grid-template-rows: minmax(80px, max-content);
+  row-gap: 25px;
+}
+
+.logo-container {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 8px 0px 0px 13px;
+}
+
+.logo-container > img {
+  width: 70px;
+  height: 60px;
+}
+
+.logo-container > p {
+  font-size: 26px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.nav-items-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 65px;
+  padding: 0px 0px 0px 35px;
+}
+
+.nav-items-group-one,
+.nav-items-group-two {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nav-items-group-one > div,
+.nav-items-group-two > div {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-items-group-one > div > img,
+.nav-items-group-two > div > img {
+  width: 25px;
+  cursor: pointer;
+}
+
+.nav-items-group-one > div > p,
+.nav-items-group-two > div > p {
+  font-size: 17px;
+  color: var(--header-layout-bg-color);
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 0;
+}
