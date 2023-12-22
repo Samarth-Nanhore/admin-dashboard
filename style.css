@@ -1,20 +1,24 @@
-.nav-items-group-one > div > img,
-.nav-items-group-two > div > img {
-  width: 30px;
+@import url("https://fonts.googleapis.com/css2?family=Karla&family=Noto+Sans&family=Open+Sans&family=Roboto&display=swap");
+
+:root {
+  box-sizing: border-box;
+  --primary-font: "Roboto";
+  --system-font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --sidebar-bg-color: #1992d4;
+  --main-layout-bg-color: #e2e8f0;
+  --header-layout-bg-color: white;
 }
 
-.nav-items-group-one > div,
-.nav-items-group-two > div {
-  display: flex;
-
-  gap: 20px;
-}
-
-.nav-items-group-one > div > p,
-.nav-items-group-two > div > p {
-  font-size: 24px;
-
+body {
   margin: 0;
+  padding: 0;
+  min-height: 100%;
+  font-family: var(--primary-font), var(--system-font-family), sans-serif;
+}
 
-  padding: 12px;
+.layout-container {
+  display: grid;
+  grid-template-columns: minmax(290px, 1fr) 5fr;
+  min-height: 100vh;
 }
