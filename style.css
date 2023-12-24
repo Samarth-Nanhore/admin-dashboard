@@ -217,3 +217,46 @@ body {
   display: grid;
   grid-template-rows: minmax(147px, max-content);
 }
+
+.main-one {
+  padding-left: 20px;
+}
+
+.projects > div {
+  background-color: white;
+  width: 340px;
+  height: 160.222px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 7px;
+  border-left: 8px solid #f0b429;
+  padding: 23px 21px 24px 18px;
+}
+
+.project-text > p:nth-child(1) {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.project-text > p:nth-child(2) {
+  margin: 0;
+  font-size: 15px;
+  color: #475569;
+  text-align: left;
+  padding-right: 10px;
+}
+
+.project-icons {
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  bottom: 24px;
+  right: 25px;
+}
+
+.project-icons > img {
+  width: 25px;
+  cursor: pointer;
+}
