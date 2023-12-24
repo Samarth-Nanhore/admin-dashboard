@@ -294,3 +294,44 @@ hr {
   margin-top: 2px;
   margin-bottom: 2px;
 }
+
+.trending-container > div {
+  background-color: white;
+  width: 295px;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.trending-profile {
+  display: flex;
+  gap: 20px;
+  padding: 18px;
+}
+
+.trending-profile > img {
+  width: 56px;
+  height: 55px;
+  cursor: pointer;
+}
+
+.trending-profile > div {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.trending-profile > div > p:nth-child(1) {
+  margin: 0;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.trending-profile > div > p:nth-child(2) {
+  margin: 0;
+  font-size: 17px;
+  color: #475569;
+}
