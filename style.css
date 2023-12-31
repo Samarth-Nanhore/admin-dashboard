@@ -25,7 +25,6 @@ body {
 
 .sidebar-layout {
   background-color: var(--sidebar-bg-color);
-
   display: grid;
   grid-template-rows: minmax(80px, max-content);
   row-gap: 25px;
@@ -211,6 +210,11 @@ body {
 
 .main-layout {
   background-color: var(--main-layout-bg-color);
+  padding-top: 30px;
+  padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  column-gap: 10px;
 }
 
 .content-area-container {
@@ -219,13 +223,19 @@ body {
 }
 
 .main-one {
-  padding-left: 20px;
+  padding-left: 25px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(415px, 1fr));
+  row-gap: 40px;
 }
 
 .projects > div {
   background-color: white;
-  width: 340px;
-  height: 160.222px;
+  width: 415px;
+  height: 185.222px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -262,18 +272,19 @@ body {
 }
 
 .main-two {
-  padding-left: 20px;
+  display: grid;
+  row-gap: 15px;
 }
 
 .announcement-container > div {
   background-color: white;
   width: 295px;
-  padding: 15px;
+  padding: 8px;
   border-radius: 12px;
 }
 
 .new-announcement {
-  padding: 18px;
+  padding: 16px;
 }
 
 .new-announcement > p:nth-child(1) {
@@ -301,14 +312,14 @@ hr {
   display: flex;
   flex-direction: column;
   gap: 1px;
-  padding: 15px;
+  padding: 8px;
   border-radius: 12px;
 }
 
 .trending-profile {
   display: flex;
   gap: 20px;
-  padding: 18px;
+  padding: 14px;
 }
 
 .trending-profile > img {
@@ -334,4 +345,13 @@ hr {
   margin: 0;
   font-size: 17px;
   color: #475569;
+}
+
+.main-one > p,
+.announcement-container > p,
+.trending-container > p {
+  margin: 0px 0px 10px 0px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
